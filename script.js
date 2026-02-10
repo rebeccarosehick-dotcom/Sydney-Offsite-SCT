@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const pdfFallback = document.querySelector('.pdf-fallback');
     
     // Check if PDF viewing is supported
-    if (!navigator.pdfViewerEnabled && !navigator.mimeTypes['application/pdf']) {
+    const hasPdfSupport = navigator.mimeTypes && navigator.mimeTypes['application/pdf'];
+    if (!hasPdfSupport) {
         if (pdfViewer) {
             pdfViewer.style.display = 'none';
         }

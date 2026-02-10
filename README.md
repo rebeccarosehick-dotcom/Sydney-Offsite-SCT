@@ -1,4 +1,4 @@
-# Sydney Offsite SCT Web App
+# Sydney Offsite SST Web App
 
 A modern, responsive web application for presenting the FY26 Sydney SST Offsite content.
 
